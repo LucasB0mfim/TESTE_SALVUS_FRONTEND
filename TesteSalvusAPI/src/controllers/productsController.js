@@ -65,11 +65,42 @@ const getUpcomingProducts = async (req, res) => {
     }
 };
 
+const createProduct = async (req, res) => {
+    try {
+        const newProduct = req.body;
+        const createdProductId = await Product.createProduct(newProduct);
+        res.status(201).json({ id: createdProductId });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+const updateProduct = async (req, res) => {
+    try {
+        await Product.updateProduct(req.params.id, req.body);
+        res.status(200).json({ message: 'Produto atualizado com sucesso' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+const deleteProduct = async (req, res) => {
+    try {
+        await Product.deleteProduct(req.params.id);
+        res.status(200).json({ message: 'Produto deletado com sucesso' });
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
 module.exports = {
     getProducts,
     getProductsByCategory,
     getProductById,
     getDiscountedProducts,
     getRandomDiscountedProduct,
-    getUpcomingProducts
+    getUpcomingProducts,
+    createProduct,
+    updateProduct,
+    deleteProduct
 };

@@ -26,17 +26,17 @@ Após a instalação, abra novamente o terminal e execute:
 `npm start`
 
 ### Com o servidor rodando localmente, abra seu navegador favorito e cole esse link para ver todos os produtos:
-1. http://localhost:3000/api/products
+1. http://localhost:3001/api/products
 
 ### Para acessar um produto específico:
-1. http://localhost:3000/api/product/ID_DO_PRODUTO
+1. http://localhost:3001/api/product/ID_DO_PRODUTO
 
 ### Para acessar os produtos por categoria:
-1. http://localhost:3000/api/products/rpg
-2. http://localhost:3000/api/products/simulacao
-3. http://localhost:3000/api/products/acao
-4. http://localhost:3000/api/products/esportes
-5. http://localhost:3000/api/products/luta
+1. http://localhost:3001/api/products/rpg
+2. http://localhost:3001/api/products/simulacao
+3. http://localhost:3001/api/products/acao
+4. http://localhost:3001/api/products/esportes
+5. http://localhost:3001/api/products/luta
 
 # Como Adicionar, Deletar e Atualizar a API
 
@@ -51,7 +51,7 @@ Download e Instalação: Baixe a versão adequada para o seu sistema operacional
 1. Abra o Postman e clique em "New" para criar uma nova requisição.
 
 2. Selecione o método HTTP apropriado (GET, POST, PUT, DELETE).
-Digite a URL da API: http://localhost:3000/api/product.
+Digite a URL da API: http://localhost:3001/api/product.
 
 3. Se for uma requisição POST ou PUT, vá até a aba "Body" e selecione "raw" e "JSON" para inserir o corpo da requisição.
 Enviar Requisição: Clique em "Send" para enviar a requisição e ver a resposta.
@@ -61,7 +61,7 @@ Enviar Requisição: Clique em "Send" para enviar a requisição e ver a respost
 **Criar um Produto (POST)**
 
 
-URL: http://localhost:3000/api/product
+URL: http://localhost:3001/api/product
 
 Corpo da Requisição (JSON):
 
@@ -97,7 +97,7 @@ Corpo da Requisição (JSON):
 
 **Atualizar um Produto (PUT)**
 
-URL: http://localhost:3000/api/product/1
+URL: http://localhost:3001/api/product/1
 
 Corpo da Requisição (JSON):
 
@@ -107,7 +107,7 @@ Corpo da Requisição (JSON):
 
 **Deletar um Produto (DELETE)**
 
-URL: http://localhost:3000/api/product/1
+URL: http://localhost:3001/api/product/1
 
 # Links para os repositórios originais
 
