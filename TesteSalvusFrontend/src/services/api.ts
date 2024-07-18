@@ -74,7 +74,7 @@ const api = createApi({
     }),
     purchase: builder.mutation<PurchaseResponse, purchasePayload>({
       query: (body) => ({
-        url: 'checkout',
+        url: 'https://fake-api-tau.vercel.app/api/eplay/checkout',
         method: 'POST',
         body
       })
